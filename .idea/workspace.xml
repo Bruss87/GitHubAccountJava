@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26c7df24-d1fe-478a-a6b9-a9dfaf4ccdcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RepositoryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -49,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RepositoryTest">
+  <component name="RunManager" selected="JUnit.RepositoryTest.canFindCommitByType">
     <configuration name="CommitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GitHubAccountJava" />
       <option name="PACKAGE_NAME" value="" />
@@ -68,8 +70,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RepositoryTest.canFindCommitById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GitHubAccountJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="METHOD_NAME" value="canFindCommitById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.canFindCommitByType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GitHubAccountJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="METHOD_NAME" value="canFindCommitByType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.canGetCommitById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GitHubAccountJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RepositoryTest" />
+      <option name="METHOD_NAME" value="canGetCommitById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RepositoryTest.canFindCommitByType" />
+        <item itemvalue="JUnit.RepositoryTest.canFindCommitById" />
+        <item itemvalue="JUnit.RepositoryTest.canGetCommitById" />
         <item itemvalue="JUnit.RepositoryTest" />
         <item itemvalue="JUnit.CommitTest" />
       </list>
