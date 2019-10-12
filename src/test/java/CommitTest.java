@@ -8,7 +8,7 @@ public class CommitTest {
 
     @Before
     public void setUp(){
-        commit = new Commit("fixed missing values bug",commitType.BUGFIX, 4);
+        commit = new Commit("fixed missing values bug", CommitType.BUGFIX, 4);
     }
 
     @Test
@@ -18,7 +18,7 @@ public class CommitTest {
 
     @Test
     public void hasCommitType(){
-        assertEquals(commitType.BUGFIX, commit.getCommitType());
+        assertEquals(CommitType.BUGFIX, commit.getCommitType());
     }
 
     @Test
