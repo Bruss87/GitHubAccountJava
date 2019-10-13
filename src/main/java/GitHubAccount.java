@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GitHubAccount {
@@ -11,8 +10,8 @@ public class GitHubAccount {
     public GitHubAccount(String userName, String name, AccountType accountType) {
         this.userName = userName;
         this.name = name;
-        this.accountType = accountType;
-        this.repositories = new HashMap<String, Repository>();
+        this.accountType = accountType.FREE;
+        this.repositories = new HashMap<>();
     }
 
     public String getUserName() {
@@ -28,14 +27,27 @@ public class GitHubAccount {
     public AccountType getAccountType() {
         return this.accountType;
     }
+
+    public void setAccountType(AccountType accountType){
+        this.accountType = accountType;
+    }
+
+
     public int countCollectionOfRepos() {
         return this.repositories.size();
     }
-//    public void addRepoToCollectionOfRepos(Repository, Repository repository) {
-//        this.repositories.put(, "Repository" );
-//    }
 
+    public void addRepoToCollectionOfRepos(String name, Repository repository) {
+        this.repositories.put(repository.name, repository );
+    }
 
+    public Repository findRepositoryByName(String name) {
+        Repository repository = null;
+        assert false;
+        return this.repositories.get(repository.name);
+    }
 
-
+    public HashMap<String, Repository> getRepositories() {
+        return repositories;
+    }
 }

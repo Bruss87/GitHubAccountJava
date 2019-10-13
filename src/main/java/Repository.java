@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Repository {
-    private String name;
+    public String name;
     private String description;
     private RepositoryType repositoryType;
     private ArrayList<Commit> commits;
@@ -43,13 +43,13 @@ public class Repository {
         return foundCommit;
     }
 
-    public Commit findCommitByType(CommitType commitType) {
+    public Commit findCommitByType(CommitType commitType ) {
         Commit foundCommit = null;
         for (Commit commit : this.commits) {
-                if (commit.getCommitType() == commitType) {
-                    foundCommit = commit;
-                }
+            if (commit.getCommitType() == commitType) {
+                foundCommit = commit;
             }
+        }
         return foundCommit;
     }
 }

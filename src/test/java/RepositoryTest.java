@@ -2,6 +2,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class RepositoryTest {
@@ -60,9 +62,9 @@ public class RepositoryTest {
 
     @Test
     public void canFindCommitByType(){
-        repository.addCommitToCollectionOfCommits(commit4);
         repository.addCommitToCollectionOfCommits(commit1);
         repository.addCommitToCollectionOfCommits(commit2);
+        repository.addCommitToCollectionOfCommits(commit4);
         Commit foundCommit = repository.findCommitByType(CommitType.FEATURE);
         assertEquals(commit4, foundCommit);
     }
